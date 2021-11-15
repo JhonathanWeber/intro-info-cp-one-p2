@@ -20,12 +20,12 @@ body {
 header {
   grid-area: h;
   background: linear-gradient(90deg, #3f1358 0%, rgb(90, 0, 173) 100%);
-  
+
   height: 10vh;
   min-height: 60px;
   padding: 8px;
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -33,14 +33,11 @@ header > ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-
 }
 
 header > ul > li {
-  
-  margin:10px;
+  margin: 10px;
   padding: 5px;
-  
 }
 
 header > div {
@@ -48,7 +45,6 @@ header > div {
   margin-right: 1vw;
   display: flex;
   align-items: center;
-
 }
 
 header > div > img {
@@ -83,9 +79,8 @@ aside > div {
 }
 
 article {
-  margin-top: 20px;
   grid-area: ac;
-  /* background-color: blue; */
+  margin: 20px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -93,19 +88,37 @@ article {
   justify-content: space-around;
 }
 
-article > section {
-  border-radius: 120px;
-  padding: 2vh;
-  padding-left: 10vh;
-  width: 80%;
-  height: 18vh;
-  display: flex;
-  background: linear-gradient(90deg, #3f1358 0%, rgb(90, 0, 173) 100%);
-  /* background-color: red; */
-  align-items:center;
-  font-size: larger;
-
+a:link,
+a:hover,
+a:focus,
+a:visited,
+a:active {
+    text-decoration: none;
+    border-radius: 120px;
+    padding: 2vh;
+    padding-left: 3vw;
+    width: 80%;
+    height: 18vh;
+    display: flex;
+    background: linear-gradient(90deg, #3f1358 0%, rgb(90, 0, 173) 100%);
+    /* background-color: red; */
+    align-items: center;
+    font-size: 1rem;
 }
+
+
+  /* article > a > section {
+    border-radius: 120px;
+    padding: 2vh;
+    padding-left: 10vh;
+    width: 80%;
+    height: 18vh;
+    display: flex;
+    background: linear-gradient(90deg, #3f1358 0%, rgb(90, 0, 173) 100%);
+     background-color: red;
+    align-items: center;
+    font-size: larger;
+  } */
 
 
 /* footer {
