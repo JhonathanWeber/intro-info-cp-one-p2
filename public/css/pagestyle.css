@@ -1,0 +1,40 @@
+#pgone,
+#pgtwo,
+#pgthree,
+#pgfour,
+#pgfive {
+  display: flex;
+  flex-direction: column;
+  height: 89vh;
+  padding: 8vh 15vw 8vh 15vw;
+}
+
+#pgone > section,
+#pgtwo > section,
+#pgthree > section,
+#pgfour > section,
+#pgfive > section {
+  height: 100%;
+}
+
+#pgone > section > article,
+#pgtwo > section > article,
+#pgthree > section > article,
+#pgfour > section > article,
+#pgfive > section > article {
+  justify-content: start;
+}
+
+
+p, h1 {
+    margin: 10px;
+    padding: 10px;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.5rem;
+}
