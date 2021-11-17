@@ -34,7 +34,20 @@ p, h1 {
 
 h1 {
   font-size: 2.5rem;
+  color: yellow;
 }
 p {
   font-size: 1.5rem;
+}
+
+h3 {
+  color: yellowgreen
+}
+
+h2 {
+  color: darkorange;
+}
+
+img {
+  max-width: 100vh;
 }

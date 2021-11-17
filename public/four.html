@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/pagestyle.css">
-    <title>Checkponte 1</title>
+    <title>Checkpoint 1</title>
   </head>
   <body>
     <header>
@@ -24,8 +24,67 @@
     <main id="pgfour">
         <section>
           <article>
-            <h1>Título</h1>
-            <p>Paragrafo</p>
+            <h1>Team Integration -> Direito na raiz(main) do projeto</h1>
+
+            <p>Antes de falarmos do fluxo de trabalho em equipe na branch principal. Uma vez configurados Git e Github, precisamos convidar outras pessoas para contribuir no nosso projeto. O passo a passo é bem simples.</p>
+
+            <ol>
+                <li>Basta acessar a página do seu repositório no github;</li>
+                <li>Clicar em Settings (Preferências);</li>
+                <li>Depois em Manage Access (gerenciar acesso);</li>
+                <li>Agora é só clicar no botão "Add people" (Adicionar pessoas);</li>
+                <li>E inserir os usernames de cada colaborador no projeto;</li>
+            </ol>
+
+            <div>
+              <p> </p>
+                <img src="img/add-collaborator-user-repo.png" alt="Adicionando pessoas ao repositório no Github" />
+              <p> </p>
+            </div>
+
+            <p>Após as etapas acima, cada um receberá um e-mail para aceitar o convite e já estará pronto para clonar o repositório e começar a trabalhar no código do projeto.</p>
+
+
+            <h2>Aqui entramos na parte importante desse tópico.</h2>
+            <p> </p>
+            <h2>Como trabalhar em equipe direto na branch main.</h2>
+
+            <p><em>Vale lembrar que essa prática pode acontecer em projetos pequenos, em fase inicial ou ambiente de aprendizado, mas o mais recomendável é trabalhar em outras branches e só depois que as alterações forem validadas e testadas devem seguirar para a branch principal do projeto.</em></p>
+
+            <p>Bom, dada a dica, vamos continuar com o fluxo de trabalho na main.</p>
+
+            <h4>O passo a passo é o seguinte:</h4>
+            <p> </p>
+            <ol>
+                <li>Trabalhamos no projeto, fazemos as alterações necessárias;</li>
+                <li>Damos um git add com o nome dos arquivos que quer adicionar para a staging area;</li>
+                <li>Em seguida fazemos um commit com o comando git commit -m "mesagem";</li>
+                <li>E pronto, o commit foi adicionado ao histórico e já podemos sincronizar nosso repositório local com o repositório remoto;</li>
+            </ol>
+            <p> </p>
+
+
+            <h3>Mas pensando que estamos trabalhando em equipe, o que pode ter acontecido nesse meio tempo?</h3>
+
+            <p>Sim, outra pessoa pode ter feito alterações e o repositório remoto pode estar diferente do repositório local.</p>
+
+            <p><em>Vale lembrar que essa prática pode acontecer em projetos pequenos, em fase inicial ou ambiente de aprendizado, mas o mais recomendável é trabalhar em outras branches e só depois que as alterações forem validadas e testadas devem seguirar para a branch principal do projeto.</em></p>
+
+
+            <h3>Tudo bem, molezinha, mas e se a outra pessoa também alterou a mesma parte do código?</h3>
+
+            <p>Aí quando tentarmos fazer o git pull (fetch + merge) isso irá gerar o famoso conflito, já ouvimos tanto quando o tema é git e github. Mas não precisamos surtar, quando acontece um conflito o git irá nos perguntar qual alteração ele deve considerar, a que estava no repositório remoto ou a alteração que fizemos localmente. Aí basta entrar no arquivo em questão e editar deixando a versão final, com o conflito corrigido.</p>
+
+            <h3>Certo, conflito solucionado, o resto a gente já sabe.</h3>
+            <p> </p>
+            <ol>
+                <li>git add [arquivo]</li>
+                <li>git commit -m "solucionando conflito no arquivo x"</li>
+                <li>git push</li>
+            </ol>
+            <p> </p>
+
+            <p>Pronto, repositório local sincronizado com o remoto no Github.</p>
           </article>
         </section>
     </main>

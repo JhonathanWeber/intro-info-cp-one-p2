@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/pagestyle.css">
-    <title>Checkponte 1</title>
+    <title>Checkpoint 1</title>
   </head>
   <body>
     <header>
@@ -24,8 +24,25 @@
     <main id="pgtwo">
         <section>
           <article>
-            <h1>Título</h1>
-            <p>Paragrafo</p>
+            <h1>Configurando Git e GitHub</h1>
+            <p>Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.</p>
+            <p>A primeira ação a se fazer é verificarmos a existência do GIT no nosso sistema operacional, no terminal do computador, utilizando o git –version. Se ele não estiver instalado, temos que instalá-lo.</p>
+            <img src="img/prompt1.jpg" alt="Prompt Git">
+            <p>Para cada sistema operacional há formas diferentes de instalar o GIT.</p>
+            <p>No Linux, há várias formas, uma delas é através de uma distribuição baseada em Debian como o Ubuntu. E no terminal utilizando o comando:</p>
+            <p><h2>sudo apt-get install git-all</h2></p>
+            <p>No Mac, também há várias formas, uma delas é utilizando o Homebrew, e escrevendo no terminal o seguinte comando:</p>
+            <p><h2>brew install git</h2></p>
+            <p>Já no Windows utilizamos o GIT BASH, para emular o ambiente BASH, criado através do comando "git" no Linux e Unix.</p>
+            <p>Feito isso, vamos para o próximo passo. Sabemos que cada diretório de trabalho do Git é um repositório com um histórico completo e habilidade total de acompanhamento das revisões, não dependente de acesso a uma rede ou a um servidor central. Mas para que outras pessoas possam ter acesso a esse repositório, podendo acompanhar as revisões e adicionar suas próprias alterações, utilizamos um serviço online de hospedagem de repositórios Git, o Git Hub.</p>
+            <img src="img/github1.jpg" alt="Tela Login GitHub">
+            <p>Após criar uma conta no site do GitHub, precisamos nos identificar no Git para que todos pontos na história tenham nossa assinatura. Executamos os dois seguintes comandos no terminal, com o nome e e-mail respectivamente:</p>
+            <p><h2>git config --global user.name "Seu nome"</h2></p>
+            <p><h2>git config --global user.email "seu-email@example.com"</h2></p>
+            <p>Depois disso, em uma pasta vazia vamos indicar que utilizaremos Git nesse projeto com o comando:</p>
+            <p><h2>git init</h2></p>
+            <img src="img/diretorio1.jpg" alt="Diretório de Pastas">
+            <p>Done!!</p>
           </article>
         </section>
     </main>

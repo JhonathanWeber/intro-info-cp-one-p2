@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/pagestyle.css">
-    <title>Checkponte 1</title>
+    <title>Checkpoint 1</title>
   </head>
   <body>
     <header>
@@ -24,8 +24,21 @@
     <main id="pgfive">
         <section>
           <article>
-            <h1>Título</h1>
-            <p>Paragrafo</p>
+            <h1>Como Trabalhar de Forma Integrada com Branch</h1>
+            <p>Uma Branch é uma cópia (um espelho) de um repositório, criando como se fosse um trabalho paralelo, isso é útil principalmente quando se quer fazer testes ou desenvolver novos recursos sem afetar o desenvolvimento principal.</p>
+            <p>Uma Branch pode ser criada a partir do repositório principal (main) ou a partir de outra Branch.</p>
+            <img src="img/branch1.jpg" alt="Branch_1" />
+            <p> Exemplos </p>
+            <img src="img/branch2.jpg" alt="Branch_2" />
+            <p>Após fazer um clone de um repositório ou atualizar o mesmo através de pull, localmente pode-se criar a Branch usando os comandos próprios do Git para isso:</p>
+            <p><h2>git checkout -b nome_da_branch</h2></p>
+            <p>Nesse branch, edite, prepare e faça os commits das alterações da maneira usual, construindo o recurso com o número de commits necessários. Trabalhe no recurso e faça commits como faria sempre que usa o Git. Quando estiver pronto, envie os commits, atualizando o branch.</p>
+            <p><h2>git status / git add / git commit</h2></p>
+            <p>
+              É recomendável enviar sua Branch para o repositório central remoto, pois outros membros de sua equipe podem utilizar os recursos ali desenvolvidos para outras finalidades, ou reaproveitamento de código, por exemplo.</p>
+            <p><h2>git push -u origin nome_da_branch</h2></p>
+            <p>Sua Branch pode depender de autorização através de pull request de quem controla o repositório principal, ou seu usuário ter essa autorização. A partir daí, garantindo que tudo esteja correto, pode-se fazer o merge, que é mesclar seu trabalho na Branch com o recurso principal na main.</p>
+            <p>Uma forma de minimizar a geração de conflitos é você fazer todo o seu trabalho localmente e salvar em uma “área de transferência”, assim quando você fizer o pull do repositório para atualizar, você pode  “colar” seu trabalho na área em que sua Branch existe localmente, fazer add, commit e push, isso leva um tempo muito pequeno para ser feito e é uma boa prática.</p>
           </article>
         </section>
     </main>
